@@ -1,0 +1,231 @@
+ /* css reset  */
+ *{
+     margin: 0;
+     padding: 0;
+     color: white;
+     font-family: 'Ubuntu', sans-serif;
+ }
+
+ /* variable in css  */
+ :root{
+   
+ }
+ html{
+     scroll-behavior: smooth;
+ }
+
+ /* template of container  */
+ #container{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+#container::before{
+    content: "";
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(../image/bg/laptop-2575689_960_720.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* header section  */
+header{
+    /* background-color: red; */
+    grid-column: 1/span 4;
+    grid-row: 1/span 1;
+    position: sticky;
+    top: 0px;
+    background: rgba(255, 255, 255, 0.493);
+    box-shadow: 0px 5px 5px  5px
+    rgba(0, 255, 234, 0.438);
+}
+
+/* heading  sub section  */ 
+ #heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .headingbox{
+     display: block;
+     margin: 8px 40px;
+ }
+ #heading img{
+     height: 40px;
+     width: 60px;
+     transform: skew(25deg,-6deg);
+     transition: all 1s ease-in-out;
+ }
+ #heading img:hover{
+     /* height: 100px;
+     width: 120px; */
+     transform: skew(180deg,-6deg);
+ }
+ #heading h1{
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 3rem;
+    color: #18bdafe0;
+    text-shadow: rgb(255 255 255 / 85%) 3px 1px
+    /* transform: scaleX(1.5);*/
+    /* transition: all 1s ease; */
+ }
+ #heading h1:hover{
+    text-shadow: rgb(255 255 255 / 80%) 3px 2px
+ }
+ #heading input{
+    padding: 3px 15px;
+    font-size: 0.8rem;
+    border-radius: 22px;
+    margin-bottom: 0px;
+    color: white;
+    border: 2px solid white;
+    background: #000000de;
+ }
+
+ /* nav sub section  */
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    width: 50%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background:#0000007a;
+    border-radius: 20px;
+    padding:  2px 10px;
+}
+nav ul li{
+    margin: 7px 10px;
+    list-style: none;
+}
+nav ul li a{
+    font-size: 1rem;
+    padding: 5px;
+    text-decoration: none;
+    text-shadow:1px 1px rgba(229, 231, 82, 0.596);
+}
+nav ul li a:hover{
+    color: rgb(132, 235, 236);
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+/* aside section  */
+aside{
+    /* background-color: blue; */
+ grid-column: 1/span 1;
+ grid-row: 2/span 1;
+ /* position: relative; */
+}
+aside h2{
+    position: sticky;
+    top: 100px;
+    margin-top: 100px;
+    margin:10px auto;
+    width: 70%;
+}
+aside ul{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+aside ul li{
+    margin: 20px;
+    list-style: none;
+    transition: all 1s ease;
+}
+aside ul li:hover{
+    transform: rotatey(45deg);
+}
+aside ul li a img{
+    height: 70px;
+    width :80px;
+}
+
+/* section section  */
+section{
+    grid-column: 2/span 3;
+    grid-row: 2/span 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+section #searchbar{
+    /* height: ; */
+    /* width: 100%; */
+    margin: auto;
+    /* border: 2px solid red; */
+    padding: 250px 100px;
+}
+section #searchbar h2{
+    display: block;
+    font-size: 5rem;
+    color: #000000de;
+    text-shadow: 2px 2px white;
+}
+section #searchbar a{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+section #searchbar a button{
+    font-size: 1.5rem;
+    color: black;
+    padding: 10px 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: #ffffff6e;
+    box-shadow: 3px 3px 5px 2px cyan;
+}
+section #searchbar a button:hover{
+    background: rgba(0, 0, 0, 0.315);
+    border-radius: 20px;
+    color: #ffffff;
+    box-shadow: 3px 3px 5px 2px rgb(25, 27, 151);
+}
+ #about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about h2{
+    color: black;
+    margin: 10px 10px;
+}
+#about p{
+    color: black;
+    font-size: 1.2rem;
+    text-align:center;
+}
+/* footer section  */
+footer{
+    /* background-color: green; */
+    height: 34px;
+    grid-column: 1/span 4;
+    grid-row: 3/span 1;
+    text-align: center;
+    color: blue;
+} 
+
+ /* utility class  */
+ .box{
+     /* border: 2px solid red; */
+     /* padding: 0px 0px;
+     margin:10px; */
+     width: 100%;
+     height: 100%;
+ }
+ h2{
+     font-size: 1.5rem;
+     text-shadow:1px 1px rgb(0, 217, 255);
+ }

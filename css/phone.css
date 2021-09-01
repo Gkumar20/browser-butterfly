@@ -1,0 +1,59 @@
+#heading img{
+    height: 15px;
+    width: 30px;
+}
+#heading h1{
+    font-size: 1.4rem;
+ }
+ #heading input{
+    padding: 1px 8px;
+    font-size: 0.5rem;
+    border-radius: 22px;
+ }
+ nav ul{
+    width: 40%;
+    padding:  1px 7px;
+}
+nav ul li{
+    margin: 4px 8px;
+}
+nav ul li a{
+    font-size: 0.7rem;
+    padding: 5px;
+}
+aside{
+    grid-column: 1/span 4;
+    grid-row: 2/span 1;
+}
+aside h2{
+    margin: 23px auto;
+    width: 20%;
+}
+aside ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+}
+aside ul li a img{
+    height: 30px;
+    width :40px;
+}
+section{
+    grid-column: 1/span 4;
+    grid-row: 3/span 1;
+}
+section #searchbar {
+    padding: 53px 100px;
+}
+section #searchbar h2 {
+    font-size: 3rem;
+
+}
+footer{
+    grid-column: 1/span 4;
+    grid-row: 4/span 1;
+}
+h2{
+    font-size: 1rem;
+}
